@@ -3,20 +3,51 @@
 // Due Date: 1/21/2025
 // Purpose: C-Style Arrays
 
-
 #include <iostream>
+#include <cstddef>
+
 using namespace std;
 
 const int numBooks = 3;
-const int numChars = 80;
+const int maxChars = 80;
 
+// Function to calculate string length safely
+size_t stringLength (const char characters [], size_t maxChars);
 
 int main(){
-  char bookTitle[numBooks][numChars] = {"Hello", "Saliha", "Popular Books"};
+  char bookTitle[numBooks][maxChars] = {"Hello", "Saliha", "Popular Books"};
+  size_t longestIndex;                     // Index of the longest index
+  size_t longestString;                    // Longest string found
+  size_t currentIndex;                     // Index of the current string through looping
+  size_t currentLength;                    // Length of the current string through looping
 
   
+  longestIndex = 0;
+  longestString = stringLength (bookTitle[0], maxChars);
 
-cout << "Hello World.. Project A2!" << endl;
+  for (int i = 1; i < numBooks ; i++)
+    {
+      currentLength = stringLength (bookTitle[i]; i++)
+        if (currentLength > longestString )
+      {
+        longestIndex = i;
+        longestString = currentLength;
+      }
+    }
+
+cout << "Here is the book with longest string\n";
+cout << "Element [" << i << "] has the longest title which is: ";
+cout << bookTitle[longestString] << endl;
+  
 return 0;
 }
 
+size_t stringLength (const char characters [], size_t maxChars)
+{
+  size_t length = 0;
+  while (length < maxChars && characters[length] != '\0' )
+    {
+    length ++
+    }
+return length;
+}
