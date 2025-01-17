@@ -1,7 +1,7 @@
-// Author: Saliha Babar
-// Assignment: A2
-// Due Date: 01/21/2025
-// Purpose: C-Style Arrays
+// Author      : Saliha Babar
+// Assignment  : A2
+// Due Date    : 01/21/2025
+// Purpose     : C-Style Arrays
 
 #include <iostream>
 #include <cstddef>
@@ -35,7 +35,7 @@ int main(){
     }
 
 cout << "Here is the book with longest string\n";
-cout << "Element [" << longestIndex << "] has the longest title which is: ";
+cout << "Element [" << longestIndex +1 << "] has the longest title which is: ";
 cout << bookTitle[longestIndex] << endl;
   
 return 0;
