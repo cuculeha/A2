@@ -8,7 +8,7 @@
 
 using namespace std;
 
-const int numBooks = 20;
+const int numBooks = 17;           // Books available is 17 units
 const int maxChars = 80;
 
 // Function to calculate string length safely
