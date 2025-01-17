@@ -8,14 +8,21 @@
 
 using namespace std;
 
-const int numBooks = 3;
+const int numBooks = 20;
 const int maxChars = 80;
 
 // Function to calculate string length safely
 size_t stringLength (const char characters [], size_t maxChars);
 
 int main(){
-  char bookTitle[numBooks][maxChars] = {"Hello", "Saliha", "Popular Books"};
+  char bookTitle[numBooks][maxChars] = {"Return of the Jedi (Star Wars)", "Heir to the Empire (Star Wars: The Thrawn Trilogy, Vol. 1)",
+                                      "Dark Force Rising (Star Wars: The Thrawn Trilogy, Vol. 2", "The Last Command (Star Wars: The Thrawn Trilogy)",
+                                      "Specter of the Past (Star Wars: The Hand of Thrawn #1)", "Vision of the Future (Star Wars: The Hand of Thrawn, Book 2)",
+                                      "Battlestar Galactica", "New Battlestar Galactica Volume 1 (Battlestar Galactica (Dynamite)) (v. 1)",
+                                      "New Battlestar Galactica Volume II Hardcover (Battlestar Galactica (Dynamite)", "The Hobbit", 
+                                      "The Lord of the Rings: 50th Anniversary, One Vol. Edition", "The Two Towers", "The Return of the King",
+                                      "The Fellowship of the Ring", "C++ Programming: From Problem Analysis to Program Design 7th Edition",
+                                      "Digital Computer Electronics", "Assembly Language for x86 Processors (7th Edition)"};
   size_t longestIndex;                     // Index of the longest index
   size_t longestString;                    // Longest string found
   size_t currentLength;                    // Length of the current string through looping
