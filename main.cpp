@@ -18,7 +18,6 @@ int main(){
   char bookTitle[numBooks][maxChars] = {"Hello", "Saliha", "Popular Books"};
   size_t longestIndex;                     // Index of the longest index
   size_t longestString;                    // Longest string found
-  size_t currentIndex;                     // Index of the current string through looping
   size_t currentLength;                    // Length of the current string through looping
 
   
@@ -27,7 +26,7 @@ int main(){
 
   for (int i = 1; i < numBooks ; i++)
     {
-      currentLength = stringLength (bookTitle[i]; i++)
+      currentLength = stringLength (bookTitle[i], maxChars );
         if (currentLength > longestString )
       {
         longestIndex = i;
@@ -36,7 +35,7 @@ int main(){
     }
 
 cout << "Here is the book with longest string\n";
-cout << "Element [" << i << "] has the longest title which is: ";
+cout << "Element [" << longestIndex << "] has the longest title which is: ";
 cout << bookTitle[longestString] << endl;
   
 return 0;
@@ -47,7 +46,7 @@ size_t stringLength (const char characters [], size_t maxChars)
   size_t length = 0;
   while (length < maxChars && characters[length] != '\0' )
     {
-    length ++
+    length ++;
     }
 return length;
 }
